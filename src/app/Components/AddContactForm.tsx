@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import InputUI from './InputUI'
 import {
-    useAccount,
     useWriteContract,
     useWaitForTransactionReceipt,
 } from "wagmi"
@@ -19,7 +18,6 @@ const AddContactForm = () => {
     } = useWriteContract();
 
     const { 
-        isLoading: isConfirming, 
         isSuccess: isConfirmed 
     } = useWaitForTransactionReceipt({
         hash,

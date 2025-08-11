@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./Provider";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Header from "./Header";
 
 const geistSans = Geist({
